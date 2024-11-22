@@ -1,0 +1,19 @@
+apiVersion: apps/v1          # API verze pro deployment
+kind: Deployment             # Typ objektu (Deployment)
+metadata:
+  name: nginx-deployment      # Jméno deploymentu
+spec:
+  replicas: 2                # Počet podů, které Kubernetes spustí
+  selector:
+    matchLabels:
+      app: nginx              # Jaké labely Kubernetes použije k nalezení správných podů
+  template:
+    metadata:
+      labels:
+        app: nginx            # Štítky aplikace (labely), použité ke spojení s deployem
+    spec:
+      containers:
+      - name: nginx           # Jméno kontejneru
+        image: my-nginx       # Jméno Docker obrazu (který jste vytvořil)
+        ports:
+        - containerPort: 80   # Port uvnitř kontejneru

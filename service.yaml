@@ -1,0 +1,12 @@
+apiVersion: v1               # API verze
+kind: Service                # Typ objektu (Service)
+metadata:
+  name: nginx-service        # Jméno služby
+spec:
+  selector:
+    app: nginx               # Tento label propojí service s pody
+  ports:
+    - protocol: TCP
+      port: 80               # Port, na kterém bude Service dostupná
+      targetPort: 80         # Port v pode, který Service zpřístupní
+  type: LoadBalancer          # Typ Service (NodePort nebo LoadBalancer)
