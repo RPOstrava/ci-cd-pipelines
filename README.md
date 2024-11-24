@@ -3,13 +3,13 @@ Continuous Integration/Continuous Deployment pipeline for Kubernetes using a too
 
 Prepare a basic Docker image for the application, e.g. a simple Nginx server.
 Kubernetes deployment manifests.
-Deploy on AWS (e.g. EKS or Lightsail).
+Deploy on Azure (e.g. EKS or Lightsail).
 Share YAML manifests, CI/CD configurations, and a sample workflow on GitHub.
 
 
 Project Goal:
 Create a simple Docker image (Nginx).
-Deploy the application to a Kubernetes cluster (Minikube or AWS EKS).
+Deploy the application to a Kubernetes cluster.
 Set up a CI/CD pipeline (using GitHub Actions) for automatic deployment when code changes occur.
 
 Environment preparation
