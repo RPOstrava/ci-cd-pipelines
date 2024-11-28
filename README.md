@@ -8,3 +8,8 @@ Project Goal: Create a simple Docker image (Nginx). Deploy the application to a 
 Environment preparation
 
 Docker Desktop Minikube (for local Kubernetes cluster). Kubectl (for Kubernetes cluster management). Git (for code versioning). GitHub account (for hosting your project).
+
+
+The original plan was to deploy the project on Azure AKS, but due to technical reasons (lack of quotas), the project is now being developed locally with Docker Desktop.
+
+Maybe Azure will be in another branch. We will see...
