@@ -1,6 +1,8 @@
 # ci-cd-pipelines
 Continuous Integration/Continuous Deployment pipeline for Kubernetes using a tool like GitHub Actions, Jenkins or ArgoCD
 
+The original plan was to deploy the project on Azure AKS, but due to technical reasons (lack of quotas), the project is now being developed locally with Docker Desktop.
+
 Prepare a basic Docker image for the application, e.g. a simple Nginx server.
 Kubernetes deployment manifests.
 Deploy on Azure (e.g. EKS or Lightsail).
